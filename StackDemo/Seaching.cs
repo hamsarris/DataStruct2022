@@ -6,6 +6,25 @@ namespace StackDemo
 {
     class Searching
     {
+        public static int Binary(int[] list, int item)
+        {
+            int l = 0;
+            int r = list.Length - 1;
+            int m = (l + r) / 2;
+
+            while (l <= r)
+            {
+
+            }
+            if (item == list[m])
+                return m;
+            else if (item < list[m])
+                r = m - 1;
+            else if (item > list[m])
+                l = m + 1;
+
+            return -1;
+        }
         /// <summary>
         /// Performs a search of given array
         /// </summary>
